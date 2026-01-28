@@ -60,8 +60,3 @@ test/
 ├── package.json         # Project dependencies
 └── README.md           # This file
 ```
-
-## Notes
-
-- The application uses a Vite proxy to avoid CORS issues when fetching data from the Kaamelott API
-- The proxy is configured in `vite.config.js` and routes `/kaamelott/*` requests to `https://kaamelott.chaudie.re`
