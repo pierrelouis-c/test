@@ -11,8 +11,8 @@ import {
 } from "react-bootstrap";
 import "./App.css";
 
-// Use a Vite dev proxy (see vite.config.js) to avoid CORS issues
-const API_URL = "/kaamelott/api/all";
+const API_URL =
+  "https://corsproxy.io/?https://kaamelott.chaudie.re/api/all";
 
 function App() {
   const [quotes, setQuotes] = useState([]);
