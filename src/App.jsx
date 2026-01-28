@@ -11,8 +11,7 @@ import {
 } from "react-bootstrap";
 import "./App.css";
 
-const API_URL =
-  "https://corsproxy.io/?https://kaamelott.chaudie.re/api/all";
+const API_URL = "/api/kaamelott/all";
 
 function App() {
   const [quotes, setQuotes] = useState([]);
