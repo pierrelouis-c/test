@@ -52,10 +52,9 @@ function App() {
 
         const data = await response.json();
 
-        const formattedCitations = data.citation.map((item, index) => {
+        const formattedCitations = data.citation.map((item) => {
           const infos = item.infos;
           return {
-            id: item.id ?? index,
             citation: item.citation ?? item.quote ?? "",
             auteur: infos.auteur ?? item.auteur ?? "",
             acteur: infos.acteur ?? item.acteur ?? "",
@@ -240,7 +239,7 @@ function App() {
             <Row className="mt-2">
               <Col className="d-flex justify-content-between align-items-center">
                 <small className="text-muted">
-                  Affichage {startIndex + 1}–
+                  Affichage {startIndex + 1}-
                   {Math.min(endIndex, filteredQuotes.length)} sur{" "}
                   {filteredQuotes.length} citations
                 </small>
